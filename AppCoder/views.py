@@ -33,8 +33,11 @@ def profesores(request):
 
 
 def estudiantes(request):
+    contexto = {
+        estudiantes : ['seba','mer','elvis']
+    }
 
-    return render(request, "AppCoder/estudiantes.html")
+    return render(request, "AppCoder/estudiantes.html",context=contexto)
 
 
 def entregables(request):

@@ -5,10 +5,20 @@
 {% block contenidoQueCambia %}
 
 
+
+
+
     <!--Aquí va lo que cambia, y lo asociado a está vista :) -->
     <h1>Estudiantes</h1>
     <p>Info de los estudiantes</p>
+    <ul>
+        {% for student in estudiantes %}
+        <li>
+        {{ student }}
+        </li>
+        
+     {% endfor %}
+        </ul>
+        
 
-  
-
-{% endblock %}
+    {% endblock %}   
